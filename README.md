@@ -20,6 +20,10 @@ The Swift code fetches the Markdown from GitHub and decodes the products with a 
 
 ![](https://raw.githubusercontent.com/icanzilb/MarkCodingDemoApp/main/etc/iphone-app.png)
 
+Finally, when the user taps one of the products they are sent to the product detail page on Amazon:
+
+![](https://raw.githubusercontent.com/icanzilb/MarkCodingDemoApp/main/etc/buy.png)
+
 Clone the repo and give the app a try!
 
 ## Credits
