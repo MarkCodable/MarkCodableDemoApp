@@ -2,7 +2,7 @@
 
 This is a demo app that showcases a simple dynamic affiliate store app for iPhone built in about 70 lines of code with a backend driven by a single Markdown file.
 
-![](https://raw.githubusercontent.com/icanzilb/MarkCodingDemoApp/main/etc/app-screen.png)
+<img src="https://raw.githubusercontent.com/icanzilb/MarkCodingDemoApp/main/etc/app-screen.png" width=320>
 
 The `MarkCoding` persistence format revolves around it being plain text easily editable by humans. This repo showcases a simple setup for an affiliate iPhone app store:
 
@@ -18,11 +18,11 @@ https://github.com/icanzilb/MarkCodingDemoApp/blob/main/books.md
 
 The Swift code fetches the Markdown from GitHub and decodes the products with a single `MarkDecoder.decode(...)` call to display a list of products:
 
-![](https://raw.githubusercontent.com/icanzilb/MarkCodingDemoApp/main/etc/iphone-app.png)
+<img src="https://raw.githubusercontent.com/icanzilb/MarkCodingDemoApp/main/etc/iphone-app.png" width="320">
 
 Finally, when the user taps one of the products they are sent to the product detail page on Amazon:
 
-![](https://raw.githubusercontent.com/icanzilb/MarkCodingDemoApp/main/etc/buy.png)
+<img src="https://raw.githubusercontent.com/icanzilb/MarkCodingDemoApp/main/etc/buy.png" width="320">
 
 Clone the repo and give the app a try!
 
