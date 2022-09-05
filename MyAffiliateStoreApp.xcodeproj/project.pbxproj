@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		9C91028528C38DC000AD9B35 /* MyAffiliateStoreAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91028428C38DC000AD9B35 /* MyAffiliateStoreAppApp.swift */; };
 		9C9102B028C38E7D00AD9B35 /* MarkCodable in Frameworks */ = {isa = PBXBuildFile; productRef = 9C9102AF28C38E7D00AD9B35 /* MarkCodable */; };
+		9CAE9CA628C61AE000CEA18D /* MarkCodable in Frameworks */ = {isa = PBXBuildFile; productRef = 9CAE9CA528C61AE000CEA18D /* MarkCodable */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9C91028128C38DC000AD9B35 /* MyAffiliateStoreApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAffiliateStoreApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C91028428C38DC000AD9B35 /* MyAffiliateStoreAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAffiliateStoreAppApp.swift; sourceTree = "<group>"; };
-		9C9102AD28C38E6700AD9B35 /* MarkCodable */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MarkCodable; path = ../MarkCodable; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -22,6 +22,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CAE9CA628C61AE000CEA18D /* MarkCodable in Frameworks */,
 				9C9102B028C38E7D00AD9B35 /* MarkCodable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,7 +33,6 @@
 		9C91027828C38DC000AD9B35 = {
 			isa = PBXGroup;
 			children = (
-				9C9102AC28C38E6700AD9B35 /* Packages */,
 				9C91028328C38DC000AD9B35 /* MyAffiliateStoreApp */,
 				9C91028228C38DC000AD9B35 /* Products */,
 				9C9102AE28C38E7D00AD9B35 /* Frameworks */,
@@ -53,14 +53,6 @@
 				9C91028428C38DC000AD9B35 /* MyAffiliateStoreAppApp.swift */,
 			);
 			path = MyAffiliateStoreApp;
-			sourceTree = "<group>";
-		};
-		9C9102AC28C38E6700AD9B35 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				9C9102AD28C38E6700AD9B35 /* MarkCodable */,
-			);
-			name = Packages;
 			sourceTree = "<group>";
 		};
 		9C9102AE28C38E7D00AD9B35 /* Frameworks */ = {
@@ -88,6 +80,7 @@
 			name = MyAffiliateStoreApp;
 			packageProductDependencies = (
 				9C9102AF28C38E7D00AD9B35 /* MarkCodable */,
+				9CAE9CA528C61AE000CEA18D /* MarkCodable */,
 			);
 			productName = MyAffiliateStoreApp;
 			productReference = 9C91028128C38DC000AD9B35 /* MyAffiliateStoreApp.app */;
@@ -117,6 +110,9 @@
 				Base,
 			);
 			mainGroup = 9C91027828C38DC000AD9B35;
+			packageReferences = (
+				9CAE9CA428C61ADF00CEA18D /* XCRemoteSwiftPackageReference "MarkCodable" */,
+			);
 			productRefGroup = 9C91028228C38DC000AD9B35 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,9 +337,25 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		9CAE9CA428C61ADF00CEA18D /* XCRemoteSwiftPackageReference "MarkCodable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/icanzilb/MarkCodable";
+			requirement = {
+				branch = "release/swift-5.7";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		9C9102AF28C38E7D00AD9B35 /* MarkCodable */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = MarkCodable;
+		};
+		9CAE9CA528C61AE000CEA18D /* MarkCodable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9CAE9CA428C61ADF00CEA18D /* XCRemoteSwiftPackageReference "MarkCodable" */;
 			productName = MarkCodable;
 		};
 /* End XCSwiftPackageProductDependency section */
