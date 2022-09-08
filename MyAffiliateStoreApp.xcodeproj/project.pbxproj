@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C46A99828C9F24C00B9848C /* MarkCodable in Frameworks */ = {isa = PBXBuildFile; productRef = 9C46A99728C9F24C00B9848C /* MarkCodable */; };
 		9C91028528C38DC000AD9B35 /* MyAffiliateStoreAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91028428C38DC000AD9B35 /* MyAffiliateStoreAppApp.swift */; };
 		9C9102B028C38E7D00AD9B35 /* MarkCodable in Frameworks */ = {isa = PBXBuildFile; productRef = 9C9102AF28C38E7D00AD9B35 /* MarkCodable */; };
-		9CAE9CA628C61AE000CEA18D /* MarkCodable in Frameworks */ = {isa = PBXBuildFile; productRef = 9CAE9CA528C61AE000CEA18D /* MarkCodable */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +22,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CAE9CA628C61AE000CEA18D /* MarkCodable in Frameworks */,
+				9C46A99828C9F24C00B9848C /* MarkCodable in Frameworks */,
 				9C9102B028C38E7D00AD9B35 /* MarkCodable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,7 +80,7 @@
 			name = MyAffiliateStoreApp;
 			packageProductDependencies = (
 				9C9102AF28C38E7D00AD9B35 /* MarkCodable */,
-				9CAE9CA528C61AE000CEA18D /* MarkCodable */,
+				9C46A99728C9F24C00B9848C /* MarkCodable */,
 			);
 			productName = MyAffiliateStoreApp;
 			productReference = 9C91028128C38DC000AD9B35 /* MyAffiliateStoreApp.app */;
@@ -111,7 +111,7 @@
 			);
 			mainGroup = 9C91027828C38DC000AD9B35;
 			packageReferences = (
-				9CAE9CA428C61ADF00CEA18D /* XCRemoteSwiftPackageReference "MarkCodable" */,
+				9C46A99628C9F24C00B9848C /* XCRemoteSwiftPackageReference "MarkCodable" */,
 			);
 			productRefGroup = 9C91028228C38DC000AD9B35 /* Products */;
 			projectDirPath = "";
@@ -338,24 +338,24 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		9CAE9CA428C61ADF00CEA18D /* XCRemoteSwiftPackageReference "MarkCodable" */ = {
+		9C46A99628C9F24C00B9848C /* XCRemoteSwiftPackageReference "MarkCodable" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/icanzilb/MarkCodable";
+			repositoryURL = "https://github.com/MarkCodable/MarkCodable";
 			requirement = {
-				branch = "release/swift-5.7";
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.6;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9C9102AF28C38E7D00AD9B35 /* MarkCodable */ = {
+		9C46A99728C9F24C00B9848C /* MarkCodable */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 9C46A99628C9F24C00B9848C /* XCRemoteSwiftPackageReference "MarkCodable" */;
 			productName = MarkCodable;
 		};
-		9CAE9CA528C61AE000CEA18D /* MarkCodable */ = {
+		9C9102AF28C38E7D00AD9B35 /* MarkCodable */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9CAE9CA428C61ADF00CEA18D /* XCRemoteSwiftPackageReference "MarkCodable" */;
 			productName = MarkCodable;
 		};
 /* End XCSwiftPackageProductDependency section */
