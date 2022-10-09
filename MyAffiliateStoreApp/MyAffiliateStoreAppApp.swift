@@ -31,7 +31,7 @@ struct MyAffiliateStoreAppApp: App {
                         do {
                             let markdown = try String(contentsOf: URL(string: "https://raw.githubusercontent.com/icanzilb/MarkCodingDemoApp/main/books.md")!)
                             books = try MarkDecoder()
-                                .decode([Book].self, string: markdown)
+                                .decode([Book].self, from: markdown)
                                 .sorted(by: { $0.featured && !$1.featured })
                         } catch {
                             status = "\(error)"
